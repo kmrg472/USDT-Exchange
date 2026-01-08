@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>USDT Elite | Premium Exchange</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-glow: rgba(37, 99, 235, 0.1);
+            --bg-core: #f8fafc;
+            --bg-glass: rgba(255, 255, 255, 0.85);
+            --text-main: #0f172a;
+            --text-dim: #64748b;
+            --border-alpha: rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--bg-core);
+            color: var(--text-main);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.5;
+        }
+
+        /* Mobile specific font scaling */
+        @media (max-width: 640px) {
+            h1 { line-height: 1.1 !important; }
+            p { line-height: 1.6 !important; }
+        }
+
+        .dynamic-mesh {
+            background-image: 
+                radial-gradient(at 0% 0%, var(--primary-glow) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.05) 0px, transparent 50%);
+        }
+
+        .glass-panel {
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-alpha);
+        }
+
+        .theme-accent-glow {
+            box-shadow: 0 10px 40px -10px var(--primary-glow);
+        }
+
+        .custom-card {
+            background: #ffffff;
+            border: 1px solid var(--border-alpha);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .custom-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .frost-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.04);
+        }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg-core); }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+        input, textarea {
+            font-size: 16px !important; /* Prevents auto-zoom on iOS */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="dynamic-mesh overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>

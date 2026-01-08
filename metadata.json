@@ -1,0 +1,7 @@
+{
+  "name": "Copy of USDT Exchange - Premium P2P",
+  "description": "Secure and fast USDT to UPI/Bank exchange platform with admin control.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
