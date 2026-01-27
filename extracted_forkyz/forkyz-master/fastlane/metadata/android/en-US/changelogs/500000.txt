@@ -1,0 +1,6 @@
+- Compatible with Android 11.
+- Updated downloadable puzzles.
+- Theme and UI adjustments.
+- Notes/anagram solving screen.
+- Remove Google integration.
+- Remove Crashlytics.

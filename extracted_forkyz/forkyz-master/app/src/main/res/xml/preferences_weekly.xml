@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/weekly_crosswords"
+    android:key="selectWeekly"
+>
+    <androidx.preference.PreferenceCategory
+        android:title="@string/regular_sized"
+    >
+        <androidx.preference.CheckBoxPreference
+            android:title="@string/de_telegraaf"
+            android:summary="@string/de_telegraaf_desc"
+            android:defaultValue="true"
+            android:key="downloadDeTelegraaf"
+        />
+        <androidx.preference.CheckBoxPreference
+            android:title="@string/jonesin_crosswords"
+            android:defaultValue="true"
+            android:summary="@string/updates_thursdays"
+            android:key="downloadJonesin"
+        />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory
+        android:title="@string/large_sized"
+    >
+        <androidx.preference.CheckBoxPreference
+            android:title="@string/premier_crossword"
+            android:defaultValue="true"
+            android:summary="@string/updates_sundays"
+            android:key="downloadPremier"
+        />
+        <androidx.preference.CheckBoxPreference
+            android:title="@string/washington_post_sunday"
+            android:defaultValue="true"
+            android:summary="@string/updates_sundays"
+            android:key="downloadWaPoSunday"
+        />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,2 @@
+- Add change clue and direction buttons to keyboard.
+- Show puzzle author on browse screen.

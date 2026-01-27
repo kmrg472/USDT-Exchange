@@ -1,0 +1,2 @@
+- Remove LA Times and Washington Post Classic downloads.
+- Allow import of multiple files simultaneously.

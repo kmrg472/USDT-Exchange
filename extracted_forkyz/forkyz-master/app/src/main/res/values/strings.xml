@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+>
+    <string name="puzzle_select">Select a puzzle:</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="reveal_puzzle">Reveal Entire Puzzle</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="ok">OK</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="elapsed_time">Elapsed Time: %1$s</string>
+    <string name="preview">Preview</string>
+    <string name="general_clue_notes">Free-form notes about clue</string>
+    <string name="general_puzzle_notes">Free-form notes about puzzle</string>
+    <string name="unknown_hint">(No explicit clue)</string>
+    <string name="play_activity_title">%1$s - %2$s -> %3$s</string>
+
+    <!-- downloading -->
+    <string name="download">Download</string>
+    <string name="puzzles_downloading">Downloading Puzzles</string>
+    <string name="puzzles_downloading_from">Downloading Puzzles from %s</string>
+    <string name="puzzles_downloaded_all">New Puzzles Downloaded</string>
+    <string name="puzzles_downloaded_some">Some Puzzles Downloaded and Some Failed</string>
+    <string name="puzzles_downloaded_none">Puzzle Downloads Failed</string>
+    <string name="puzzle_downloaded">Downloaded %1$s</string>
+    <string name="puzzle_download_failed">Download failed from %1$s</string>
+    <string name="puzzle_download_no_connection">No puzzles downloaded due to no network connection.</string>
+
+    <!-- imports -->
+    <string name="import_fallback_source">Import</string>
+    <string name="imports_title">Puzzle Import(s)</string>
+    <string name="import_success">Puzzle(s) imported</string>
+    <string name="import_failure">Some imports failed</string>
+    <string name="import_success_long">The selected puzzles were imported into Forkyz.</string>
+    <string name="import_failure_long">Some puzzles were not imported into Forkyz.</string>
+
+    <!-- permissions -->
+    <string name="perm_read_desc">Requested on older devices to read saved puzzles.</string>
+    <string name="perm_write_desc">Requested on older devices to store puzzles.</string>
+    <string name="perm_internet_desc">Required to download puzzles from the internet.</string>
+    <string name="perm_access_network_state_desc">Required to limit background download when on mobile data or wifi.</string>
+    <string name="perm_boot_desc">Required to (optionally) allow periodic background download of puzzles.</string>
+    <string name="vibrate_desc">Required for haptic feedback on built-in keyboard.</string>
+    <string name="wake_lock_desc">Used only for automatic download on older Android version.</string>
+    <string name="notification_permission_desc">Used for puzzle download notifications (when not disabled in settings).</string>
+
+    <!-- Browse -->
+    <string name="delete">Delete</string>
+    <string name="archive">Archive</string>
+    <string name="unarchive">Un-Archive</string>
+    <string name="add_puzzle">Add Puzzle</string>
+    <string name="online_sources">Online Sources</string>
+    <string name="online_sources_url">https://yourealwaysbe.github.io/forkyz</string>
+    <string name="import_puzzle">Import Puzzle</string>
+    <string name="download_puzzles">Download Puzzles</string>
+    <string name="back">Back</string>
+    <string name="no_puzzles_download_or_configure_storage">No puzzles found. Download puzzles with the button below or configure a storage directory in settings.</string>
+    <string name="no_puzzles">No puzzles found.</string>
+    <string name="unable_to_read_file">Unable to read file %1$s</string>
+    <string name="download_notification_channel_name">Downloads</string>
+    <string name="download_notification_channel_desc">Notifications about downloaded puzzles</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="internal_storage_description">Currently using internal storage. Puzzles will be deleted when Forkyz is uninstalled.</string>
+    <string name="allow_permissions">Allow Permissions</string>
+    <string name="please_allow_storage">Please allow writing to storage when prompted. Forkyz needs this permission to store downloaded crossword files and cannot work without it.</string>
+    <string name="title_view_archives">Archives</string>
+    <string name="title_view_crosswords">Crosswords</string>
+    <string name="puzzle_caption_with_author">%1$s by %2$s</string>
+    <string name="download_but_no_active_network">Please enable a network connection before downloading.</string>
+    <string name="downloader_available_soon">%1$s (in &lt;1hr)</string>
+    <plurals name="downloader_available_hours">
+        <item quantity="one">%1$s (in ~%2$dhr)</item>
+        <item quantity="other">%1$s (in ~%2$dhrs)</item>
+    </plurals>
+    <string name="downloader_available_future">%1$s (not yet available)</string>
+    <string name="downloader_not_available">%1$s (not available)</string>
+    <string name="notifications_request_rationale">Download notifications enabled. Allow or disable in download settings.</string>
+    <string name="disable_notifications">Disable Notifications?</string>
+    <string name="notifications_denied_msg">Download notifications are denied in Android settings. Would you like to disable download notifications in the Forkyz download settings? If you would like to keep notifications, please enable notifications for Forkyz in the Android settings.</string>
+    <string name="disable_notifications_button">Disable</string>
+    <string name="android_app_settings_button">Settings</string>
+    <string name="new_version_title">Welcome to Forkyz Version %1$s</string>
+    <string name="new_version_message">A list of changes is available in the release notes in settings.</string>
+    <string name="view_release_notes">View Changes</string>
+
+    <!-- play page -->
+    <string name="open_clue_list">Open clue list</string>
+    <string name="toggle_clue_tabs">Show/hide clues under grid</string>
+    <string name="open_clue_notes">Open clue notes page</string>
+    <string name="select_clue">Select clue</string>
+
+    <!-- clues list -->
+    <string name="current_word">Current word</string>
+    <string name="clue_word">The grid word for the clue</string>
+    <string name="clue_hint">Clue Hint</string>
+    <string name="edit_clue">Edit Clue</string>
+
+    <!-- notes page -->
+    <string name="anagram_source_lab">Anagram remaining letters</string>
+    <string name="anagram_solution_lab">Anagram solution</string>
+    <string name="board_lab">Board</string>
+    <string name="scratch_lab">Scratch</string>
+    <string name="notes_lab">Notes</string>
+    <string name="copy_conflict">Copy Conflict</string>
+    <string name="transfer_overwrite_warning">Transferring the response conflicts with existing entries. Overwrite anyway?</string>
+    <string name="flagClue">Flag clue</string>
+    <string name="player_notes">Puzzle Notes</string>
+    <string name="transfer_board_to_scratch_or_anagram">Transfer board contents to scratch or anagram</string>
+    <string name="transfer_scratch_to_notes">Transfer scratch contents to free notes</string>
+    <string name="transfer_scratch_to_board">Transfer scratch contents to board</string>
+    <string name="shuffle_anagram_source">Shuffle anagram source letters</string>
+    <string name="transfer_anagram_solution_to_board">Transfer anagram solution to board</string>
+
+    <!-- clue formats -->
+    <string name="clue_format_short_no_dir">%1$s. %2$s</string>
+    <string name="clue_format_short_no_dir_with_count">%1$s. %2$s [%3$d]</string>
+    <string name="clue_format_short">%1$s%2$s. %3$s</string>
+    <string name="clue_format_short_with_count">%1$s%2$s. %3$s [%4$d]</string>
+    <string name="clue_format_long">(%1$s) %2$s. %3$s</string>
+    <string name="clue_format_long_with_count">(%1$s) %2$s. %3$s [%4$d]</string>
+    <string name="clue_format_long_no_num">(%1$s) %2$s</string>
+    <string name="clue_format_long_no_num_with_count">(%1$s) %2$s [%3$d]</string>
+    <string name="clue_format_short_no_num">%1$s. %2$s</string>
+    <string name="clue_format_short_no_num_with_count">%1$s. %2$s [%3$d]</string>
+    <string name="clue_format_short_no_num_no_dir">%1$s</string>
+    <string name="clue_format_short_no_num_no_dir_with_count">%1$s [%2$d]</string>
+
+    <!-- Puzzle Info Dialog -->
+    <string name="tap_to_show_full_notes_no_text">(Tap to show full notes.)</string>
+    <string name="tap_to_hide_full_notes_no_text">(Tap to hide full notes.)</string>
+    <string name="tap_to_show_full_notes_with_text">%1$s&lt;br&gt;(Tap to show full notes.)</string>
+    <string name="tap_to_hide_full_notes_with_text">%1$s&lt;br&gt;(Tap to hide full notes.)</string>
+    <string name="introduction">Introduction</string>
+    <string name="notes">Notes</string>
+    <string name="completed">Completed</string>
+
+    <!-- preferences -->
+    <string name="storage_location">Storage Location</string>
+    <string name="storage_location_desc">Configure where Forkyz stores/finds its files. Restart app after change.</string>
+    <string name="internal_storage">App Internal Storage</string>
+    <string name="external_storage_saf">External directory</string>
+    <string name="external_storage_saf_current_uri">(Current: %1$s)</string>
+    <string name="external_storage_saf_none_selected">no directory selected</string>
+    <string name="external_storage_legacy">External SD crosswords directory</string>
+    <string name="storage_changed_please_restart">Storage location changed. Please restart Forkyz.</string>
+    <string name="failed_to_initialise_saf">Could not initialise external directory.</string>
+    <string name="storage_problem_falling_back_internal">Error accessing configured storage, falling back to internal.</string>
+    <string name="storage_full_warning">Warning, storage is low on space. The app may not function correctly.</string>
+    <string name="storage_select_saf_info">Create or select a folder for crosswords.</string>
+    <string name="select_sources">Puzzle Sources</string>
+    <string name="select_sources_desc">Enable/disable sources for puzzle download.</string>
+    <string name="daily_crosswords">Daily Crosswords</string>
+    <string name="daily_crosswords_desc">Puzzles which update daily.</string>
+    <string name="weekly_crosswords">Weekly Crosswords</string>
+    <string name="weekly_crosswords_desc">Puzzles which update weekly.</string>
+    <string name="scraper_sources">Page Scrapers</string>
+    <string name="scraper_sources_desc">Online puzzle archives</string>
+    <string name="browser_settings">Browser Settings</string>
+    <string name="browser_settings_desc">Behaviour and appearance of the puzzle list page.</string>
+    <string name="interaction_settings">Interaction Settings</string>
+    <string name="interaction_settings_desc">Behaviour and control of the puzzle grid while playing.</string>
+    <string name="voice_settings">Voice and Accessibility Settings</string>
+    <string name="voice_settings_desc">Configure the use of voice commands and announcements in game.</string>
+    <string name="keyboard_settings">Keyboard Settings</string>
+    <string name="keyboard_settings_desc">Appearance, behaviour, and type of keyboard used for entering text during play.</string>
+    <string name="display_settings">Display Settings</string>
+    <string name="display_settings_desc">Appearance of the app and displayed puzzle grid.</string>
+    <string name="download_settings">Download Settings</string>
+    <string name="download_settings_desc">Behaviour of the puzzle download features.</string>
+    <string name="fit_screen_start">Fit to screen when starting</string>
+    <string name="fit_screen_start_desc">Best-fits the puzzle when you start.</string>
+    <string name="automatic_download">Automatic Download</string>
+    <string name="automatic_download_desc">Download today\'s puzzles when starting the application</string>
+    <string name="background_download_opts">Background Download Settings</string>
+    <string name="background_download_opts_desc">Configure background downloads.</string>
+    <string name="no_summary_download_notifs">No Summary Download Notification</string>
+    <string name="no_summary_download_notifs_desc">Prevents summary download notification from appearing in the notifications list.</string>
+    <string name="no_puzzle_download_notifs">No Individual Download Notifications</string>
+    <string name="no_puzzle_download_notifs_desc">Prevents a notification for each puzzle download from appearing in the notifications list.</string>
+    <string name="download_timeout">Download timeout</string>
+    <string name="download_timeout_desc">How long to try downloading a puzzle before giving up.</string>
+    <string name="fifteen_seconds">15 seconds</string>
+    <string name="thirty_seconds">30 seconds</string>
+    <string name="forty_five_seconds">45 seconds</string>
+    <string name="sixty_seconds">1 minute</string>
+    <string name="no_hint_highlighting">No Hint Highlighting</string>
+    <string name="no_hint_highlighting_desc">Prevents the pink boxes indicating \'hints\' in the form of reveals or show errors.</string>
+    <string name="delete_on_cleanup">Delete on Cleanup</string>
+    <string name="delete_on_cleanup_desc">Delete rather than archive old puzzles</string>
+    <string name="cleanup_unfinished">Cleanup Unfinished</string>
+    <string name="cleanup_unfinished_desc">Determines how old an unfinished puzzle must be before it is archived/deleted.</string>
+    <string name="cleanup_archives">Cleanup Archives</string>
+    <string name="cleanup_archives_desc">Determines how old an archived puzzle must be before it is deleted.</string>
+    <string name="keyboard_showhide">Show/Hide In-App Keyboard</string>
+    <string name="keyboard_showhide_desc">The show/hide behaviour of the in-app keyboard.</string>
+    <string name="keyboard_layout">Keyboard Layout</string>
+    <string name="keyboard_layout_desc">The layout of the in-app keyboard.</string>
+    <string name="snap_current">Snap to Current Word</string>
+    <string name="snap_current_desc">Toggles the auto-scrolling of the playboard to the current play position</string>
+    <string name="show_length">Show Length</string>
+    <string name="show_length_desc">Shows the number of letters in the answer on the clue line</string>
+    <string name="scroll_to_clue">Scroll To Clue</string>
+    <string name="scroll_to_clue_desc">Toggles the auto-scrolling to the selected clue in the clues list. (Works like Forkyz 1)</string>
+    <string name="movement_style">Movement Style</string>
+    <string name="movement_style_desc">Select what happens when you type past the end of a word.</string>
+    <string name="skip_filled">Skip Filled Boxes</string>
+    <string name="skip_filled_desc">Toggles the skipping of filled boxes when you enter a new letter.</string>
+    <string name="preserve_correct">Preserve Correct Boxes when Showing Errors</string>
+    <string name="preserve_correct_desc">Keeps you from overwriting a correct box when you are in \'Show Errors\' mode.</string>
+    <string name="space_change_dir">Space Changes Direction</string>
+    <string name="space_change_dir_desc">Spacebar changed direction rather than blanking the box.</string>
+    <string name="enter_changes_direction">Enter Changes Direction</string>
+    <string name="enter_changes_direction_desc">Enter changes direction rather than moving to the next clue.</string>
+    <string name="double_tap_zoom">Double Tap Fit to Screen</string>
+    <string name="double_tap_zoom_desc">Double tap changes zoom to fit to screen.</string>
+    <string name="show_timer">Show Timer</string>
+    <string name="show_timer_desc">Shows your puzzle time.\nYou must leave and re-enter a puzzle to apply.</string>
+    <string name="full_screen">Full Screen</string>
+    <string name="full_screen_desc">Hides the notification bar.\nYou must leave and re-enter a puzzle to apply.</string>
+    <string name="orientation_lock">Orientation Lock</string>
+    <string name="orientation_lock_desc">Locks the screen location</string>
+    <string name="disable_swipe">Disable Swipe</string>
+    <string name="disable_swipe_desc">Disables swiping to dismiss on the list view.</string>
+    <string name="swipe_action">Swipe Action</string>
+    <string name="swipe_action_desc">Select delete or archive on swipe</string>
+    <string name="display_scratch">Display Scratch</string>
+    <string name="display_scratch_desc">Display scratch notes on play board.</string>
+    <string name="dont_delete_crossing">Don\'t delete crossing words</string>
+    <string name="dont_delete_crossing_desc">When deleting, don\'t delete a letter if it is part of a filled-in crossing word</string>
+    <string name="about_forkyz">About Forkyz</string>
+    <string name="release_notes">Release Notes</string>
+    <string name="license">License</string>
+    <string name="keyboard_hide_button">Keyboard Hide Button</string>
+    <string name="keyboard_hide_button_desc">Show a keyboard hide button instead of using the navigation back button.</string>
+    <string name="keyboard_haptic">Keyboard Haptic Feedback</string>
+    <string name="keyboard_haptic_desc">Vibrate on keyboard keypress.</string>
+    <string name="keyboard_use_native">Use native keyboard</string>
+    <string name="keyboard_use_native_desc">Use system soft input method. Still a bit experimental.</string>
+    <string name="theme_preference">Theme</string>
+    <string name="theme_preference_desc">Select application theme (requires restart).</string>
+    <string name="random_clue_on_shake">Random Clue on Shake</string>
+    <string name="random_clue_on_shake_desc">Jump to a random unfilled clue when shake detected in main puzzle activity.</string>
+
+    <!-- preferences download -->
+    <string name="auto_downloaders">Automatic Download Sources</string>
+    <string name="auto_downloaders_desc">Which of the enabled sources are used for automatic and background download.</string>
+    <string name="background_download_time_config">Download Times</string>
+    <string name="background_download_constraints_config">Download Constraints</string>
+    <string name="background_download_hourly">Download puzzles hourly</string>
+    <string name="background_download_hourly_desc">Download puzzles in the background once every  hour</string>
+    <string name="background_download_days">Download puzzles on days</string>
+    <string name="background_download_days_desc">Download puzzles in the background on the selected days</string>
+    <string name="background_download_days_time">Daily download time</string>
+    <string name="background_download_days_time_desc">If downloading on selected days, select download time (exact time depends on constraints and phone optimisations)</string>
+    <string name="download_wifi_only">Download over Wifi only</string>
+    <string name="download_wifi_only_desc_on">Only schedule background downloads when Wifi is available.</string>
+    <string name="download_wifi_only_desc_off">Schedule background downloads even when not on Wifi</string>
+    <string name="download_roaming">Download when roaming</string>
+    <string name="download_roaming_desc_on">Schedule background downloads even when roaming</string>
+    <string name="download_roaming_desc_off">Do not schedule background downloads when roaming (will download when roaming on Android 6 (Marshmallow) or earlier)</string>
+    <string name="download_charging">Download while charging only</string>
+    <string name="download_charging_desc_on">Only schedule background downloads when charging</string>
+    <string name="download_charging_desc_off">Schedule background downloads when on battery</string>
+    <string name="background_download_0">00:00</string>
+    <string name="background_download_1">01:00</string>
+    <string name="background_download_2">02:00</string>
+    <string name="background_download_3">03:00</string>
+    <string name="background_download_4">04:00</string>
+    <string name="background_download_5">05:00</string>
+    <string name="background_download_6">06:00</string>
+    <string name="background_download_7">07:00</string>
+    <string name="background_download_8">08:00</string>
+    <string name="background_download_9">09:00</string>
+    <string name="background_download_10">10:00</string>
+    <string name="background_download_11">11:00</string>
+    <string name="background_download_12">12:00</string>
+    <string name="background_download_13">13:00</string>
+    <string name="background_download_14">14:00</string>
+    <string name="background_download_15">15:00</string>
+    <string name="background_download_16">16:00</string>
+    <string name="background_download_17">17:00</string>
+    <string name="background_download_18">18:00</string>
+    <string name="background_download_19">19:00</string>
+    <string name="background_download_20">20:00</string>
+    <string name="background_download_21">21:00</string>
+    <string name="background_download_22">22:00</string>
+    <string name="background_download_23">23:00</string>
+    <string name="background_download_mon">Monday</string>
+    <string name="background_download_tue">Tuesday</string>
+    <string name="background_download_wed">Wednesday</string>
+    <string name="background_download_thu">Thursday</string>
+    <string name="background_download_fri">Friday</string>
+    <string name="background_download_sat">Saturday</string>
+    <string name="background_download_sun">Sunday</string>
+
+    <!-- preferences daily -->
+    <string name="updates_mon_fri">Updates Monday-Friday</string>
+    <string name="updates_mon_sat">Updates Monday-Saturday</string>
+    <string name="updates_daily">Updates Daily</string>
+    <string name="hamburger_abendblatt_daily">(DE) Hamburger Abendblatt</string>
+    <string name="hamburger_abendblatt_daily_desc">Daily crossword in German</string>
+    <string name="vingminutes">(FR) 20 Minutes</string>
+    <string name="vingminutes_desc">Daily crossword in French, Level 2</string>
+    <string name="le_parisien_daily_f1">(FR) Le Parisien Force 1</string>
+    <string name="le_parisien_daily_f1_desc">Daily crossword in French, level 1</string>
+    <string name="le_parisien_daily_f2">(FR) Le Parisien Force 2</string>
+    <string name="le_parisien_daily_f2_desc">Daily crossword in French, level 2</string>
+    <string name="le_parisien_daily_f3">(FR) Le Parisien Force 3</string>
+    <string name="le_parisien_daily_f3_desc">Daily crossword in French, level 3</string>
+    <string name="le_parisien_daily_f4">(FR) Le Parisien Force 4</string>
+    <string name="le_parisien_daily_f4_desc">Daily crossword in French, level 4</string>
+    <string name="guardian_daily">Guardian Daily Cryptic</string>
+    <string name="independent_daily">Independent Daily Cryptic</string>
+    <string name="newsday">Newsday</string>
+    <string name="joseph_crossword">Thomas Joseph Crossword</string>
+    <string name="sheffer_crossword">Sheffer Crossword</string>
+    <string name="universal_crossword">Universal Crossword</string>
+    <string name="usa_today">USA Today</string>
+    <string name="uclick_copyright">uclick LLC</string>
+    <string name="de_standaard">(FL) De Standaard</string>
+    <string name="de_standaard_desc">Daily crossword in Flemish</string>
+
+    <!-- preferences weekly -->
+    <string name="updates_thursdays">Updates Thursdays</string>
+    <string name="updates_sundays">Updates Sundays</string>
+    <string name="regular_sized">Regular Sized</string>
+    <string name="large_sized">Large Sized</string>
+    <string name="jonesin_crosswords">Jonesin\' Crosswords</string>
+    <string name="premier_crossword">Premier Crossword</string>
+    <string name="wall_street_journal">The Wall Street Journal</string>
+    <string name="washington_post_sunday">The Washington Post Sunday</string>
+    <string name="de_telegraaf">(DU) De Telegraaf</string>
+    <string name="de_telegraaf_desc">Updates Sundays, in Dutch</string>
+
+    <!--  preferences scrapers -->
+    <string name="cru_puzzle_workshop">Cryptic Cru Workshop Archive</string>
+    <string name="cru_puzzle_workshop_desc">NYT Cru Cryptic Fan Puzzles\nhttps://archive.nytimes.com/www.nytimes.com/premium/xword/cryptic-archive.html</string>
+    <string name="keglars_cryptics">Kegler\'s Kryptics</string>
+    <string name="keglars_cryptics_desc">Ron &quot;Kegler&quot; Sweet\'s Cryptic Archive\nhttps://kegler.gitlab.io/Block_style/index.html</string>
+    <string name="private_eye">Private Eye</string>
+    <string name="private_eye_desc">Archive of the Private Eye crossword. New puzzle roughly every fortnight.</string>
+    <string name="przekroj">(PO) Przekrój</string>
+    <string name="przekroj_desc">Puzzles from Przekrój magazine, in Polish.</string>
+    <string name="about_scrapes">About These Sources</string>
+
+    <!-- preferences custom -->
+    <string name="custom_daily">Custom daily puzzle source</string>
+    <string name="custom_daily_title">Custom daily</string>
+    <string name="custom">Use custom source</string>
+    <string name="custom_desc">Specify source URL below</string>
+    <string name="custom_title">Puzzle name</string>
+    <string name="custom_title_desc">Enter title for puzzle list</string>
+    <string name="custom_url">Source URL</string>
+    <string name="custom_url_desc">Enter URL formatted according to Java\'s DateTimeFormatter. The puzzle can be in any supported format.</string>
+
+    <!-- menus general -->
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="share_clue">Clue</string>
+    <string name="share_clue_response">Clue with Board</string>
+    <string name="share_puzzle_full">Current Puzzle</string>
+    <string name="share_puzzle_orig">Blank Puzzle</string>
+    <string name="share_puzzle_open_share_url">Open Share URL</string>
+
+    <!-- clue list menu -->
+    <string name="menu_clue_notes">Clue Notes</string>
+    <string name="menu_puzzle_notes">Puzzle Notes</string>
+    <string name="show_all_words_clue_list">Show all words</string>
+
+    <!-- play menu -->
+    <string name="special_entry">Insert Special</string>
+    <string name="grid">Grid</string>
+    <string name="clues">Clues</string>
+    <string name="zoom">Zoom</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_in_max">Zoom In Max</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="fit_to_screen">Fit to Screen</string>
+    <string name="zoom_reset">Zoom Reset</string>
+    <string name="show_errors">Show Errors</string>
+    <string name="showing_errors">Showing Errors</string>
+    <string name="show_errors_full_grid">Grid</string>
+    <string name="show_errors_cursor">Cursor</string>
+    <string name="show_errors_clue">Clue</string>
+    <string name="scratch_mode">Scratch Mode</string>
+    <string name="reveal">Reveal</string>
+    <string name="initial_letter">Initial Letter</string>
+    <string name="initial_letters">Initial Letters</string>
+    <string name="letter">Letter</string>
+    <string name="word">Word</string>
+    <string name="errors">Errors</string>
+    <string name="puzzle">Puzzle</string>
+    <string name="info">Info</string>
+    <string name="support_puzzle_source">Support Puzzle Source</string>
+    <string name="menu_notes">Notes</string>
+    <string name="menu_notes_clue">Clue</string>
+    <string name="menu_notes_player">Puzzle</string>
+
+    <!-- Clue Tabs -->
+    <string name="clue_tab_history">History</string>
+
+    <!-- playboard -->
+    <string name="cur_box_blank">blank</string>
+    <string name="word_all_blank">all blank</string>
+    <!-- %1$s is clue announce, %2$s is word announce as below -->
+    <string name="announce_clue_word_response">%1$s %2$s</string>
+    <string name="announce_clue">Clue %1$s.</string>
+    <string name="announce_word_response">Word %1$s.</string>
+    <string name="announce_box_response">Box %1$s.</string>
+    <string name="announce_first_box_response">First box of clue %1$s.</string>
+    <string name="announce_last_box_response">Last box of clue %1$s.</string>
+    <string name="announce_only_box_response">Only box of clue %1$s.</string>
+
+    <!-- browse menu -->
+    <string name="app_theme">App Theme</string>
+    <string name="sort">Sort</string>
+    <string name="by_date_desc">By Date (Descending)</string>
+    <string name="by_date_asc">By Date (Ascending)</string>
+    <string name="by_source">By Source</string>
+    <string name="cleanup">Cleanup</string>
+    <string name="archives">Archives</string>
+
+    <!-- puzzle list item -->
+    <string name="puzzle_date">Puzzle Date</string>
+    <string name="puzzle_name">Puzzle Name</string>
+    <string name="caption_text">Caption text</string>
+
+    <!-- puzzle info dialog -->
+    <string name="puzzle_title">Title of Puzzle</string>
+    <string name="by_author">By Author</string>
+    <string name="copyright_info">Copyright Info</string>
+    <string name="elapsed_time_labelled_dummy">Elapsed Time: X:XX</string>
+    <string name="puzzle_intro">Puzzle introduction.</string>
+    <string name="puzzle_notes">Puzzle notes.</string>
+
+    <!-- completed -->
+    <string name="puzzle_finished_title">Puzzle Finished</string>
+    <string name="puzzle_completed">Puzzle notes.</string>
+    <string name="completed_in">Completed In</string>
+    <string name="elapsed_time_dummy">XX:XX:XX</string>
+    <string name="total_clues">Total Clues</string>
+    <string name="dummy_xx">XX</string>
+    <string name="total_boxes">Total Boxes</string>
+    <string name="hinted_boxes">Hinted Boxes</string>
+    <string name="dummy_xx_w_pcnt">XX (XX%)</string>
+    <string name="done">Done</string>
+    <string name="num_hinted_boxes">%1$d (%2$d%%)</string>
+    <string name="share_your_time">Share your time</string>
+    <string name="completed_time_format_no_hours">%1$02d:%2$02d</string>
+    <string name="completed_time_format_with_hours">%1$02d:%2$02d:%3$02d</string>
+    <plurals name="share_message_with_date">
+        <item quantity="one">I finished the %1$s crossword for %2$s in #Forkyz with %3$d hint!</item>
+        <item quantity="other">I finished the %1$s crossword for %2$s in #Forkyz with %3$d hints!</item>
+    </plurals>
+    <plurals name="share_message_no_date">
+        <item quantity="one">I finished the %1$s crossword in #Forkyz with %2$d hint!</item>
+        <item quantity="other">I finished the %1$s crossword in #Forkyz with %2$d hints!</item>
+    </plurals>
+
+    <!-- manifest -->
+    <string name="app_name">Forkyz</string>
+    <string name="settings_label">Settings</string>
+    <string name="clues_list_label">Clues</string>
+    <string name="notes_label">Notes</string>
+    <string name="html_label">Forkyz</string>
+
+    <!-- keyboard -->
+    <string name="key_a">a</string>
+    <string name="key_b">b</string>
+    <string name="key_c">c</string>
+    <string name="key_d">d</string>
+    <string name="key_e">e</string>
+    <string name="key_f">f</string>
+    <string name="key_g">g</string>
+    <string name="key_h">h</string>
+    <string name="key_i">i</string>
+    <string name="key_j">j</string>
+    <string name="key_k">k</string>
+    <string name="key_l">l</string>
+    <string name="key_m">m</string>
+    <string name="key_n">n</string>
+    <string name="key_o">o</string>
+    <string name="key_p">p</string>
+    <string name="key_q">q</string>
+    <string name="key_r">r</string>
+    <string name="key_s">s</string>
+    <string name="key_t">t</string>
+    <string name="key_u">u</string>
+    <string name="key_v">v</string>
+    <string name="key_w">w</string>
+    <string name="key_x">x</string>
+    <string name="key_y">y</string>
+    <string name="key_z">z</string>
+    <string name="key_space">space</string>
+    <string name="key_delete">delete</string>
+    <string name="key_up">up</string>
+    <string name="key_down">down</string>
+    <string name="key_left">left</string>
+    <string name="key_right">right</string>
+    <string name="change_direction">Change clue direction</string>
+    <string name="next_clue">Next clue</string>
+    <string name="prev_clue">Previous clue</string>
+    <string name="hide_keyboard">Hide keyboard</string>
+
+    <string name="keyboard_always_show">Always show</string>
+    <string name="keyboard_hide_manual">Hide keyboard manually</string>
+    <string name="keyboard_show_sparingly">Show sparingly</string>
+    <string name="keyboard_show_sparingly_desc">Hide keyboard on clue change</string>
+    <string name="keyboard_never_show">Never show</string>
+
+    <string name="keyboard_qwerty">QWERTY</string>
+    <string name="keyboard_qwertz">QWERTZ</string>
+    <string name="keyboard_dvorak">Dvorak</string>
+    <string name="keyboard_colemak">Colemak</string>
+
+    <!-- special entry -->
+    <string name="special_character">Special Character</string>
+    <string name="enter_special_desc">Enter the response in the box below. The character(s) will be entered onto the board as is. E.g. lowercase letters will not be converted to uppercase. Special characters and multiple characters are allowed.</string>
+
+    <!-- share clue -->
+    <string name="share_clue_title">Clue</string>
+    <string name="share_puzzle_title">Clue</string>
+    <string name="share_clue_blank_box">?</string>
+    <string name="share_clue_text">%1$s\n%2$s</string>
+    <string name="share_clue_response_text">%1$s\nHint: %2$s\n%3$s.</string>
+    <string name="share_puzzle_details_author_no_url">%1$s, %2$s by %3$s</string>
+    <string name="share_puzzle_details_no_author_no_url">%1$s, %2$s</string>
+    <string name="share_puzzle_details_author_url">%1$s, %2$s by %3$s\n%4$s</string>
+    <string name="share_puzzle_details_no_author_url">%1$s, %2$s\n%3$s</string>
+
+    <!-- themes -->
+    <string name="standard_theme">Standard Theme</string>
+    <string name="dynamic_theme">Material You Dynamic Theme</string>
+    <string name="legacy_like_theme">Legacy-Like Theme</string>
+    <string name="standard_theme_value">S</string>
+    <string name="dynamic_theme_value">D</string>
+    <string name="legacy_like_theme_value">L</string>
+
+    <!-- voice commands -->
+    <!-- make sure app/src/main/assets/.. help files match commands here -->
+    <!-- help files should really be in a resources file where they can be
+    overridden for different languages -->
+    <string name="no_speech_recognition_available">No voice input available on system, please check Android input settings.</string>
+    <string name="command_letter">Letter</string>
+    <string name="command_answer">Solution</string>
+    <string name="command_answer_alt">Put</string>
+    <string name="command_toggle">Toggle</string>
+    <string name="command_number">Number</string>
+    <string name="command_next">Next</string>
+    <string name="command_previous">Previous</string>
+    <string name="command_left">Left</string>
+    <string name="command_right">Right</string>
+    <string name="command_up">Up</string>
+    <string name="command_down">Down</string>
+    <string name="command_delete">Delete</string>
+    <string name="command_clear">Clear</string>
+    <string name="command_back">Back</string>
+    <string name="command_clues">Clues</string>
+    <string name="command_notes">Notes</string>
+    <string name="command_scratch">Scratch</string>
+    <string name="command_flag">Flag</string>
+    <string name="command_announce_clue">Announce</string>
+    <string name="command_current_clue_help">Help</string>
+    <string name="command_jump_random">Jump</string>
+    <string name="voice_with_volume">Volume down activates voice</string>
+    <string name="voice_with_volume_desc">Use the volume down key to activate voice command input during play.</string>
+    <string name="voice_with_button">Show button to activate voice</string>
+    <string name="voice_with_button_desc">Add an on-screen button to activate voice command input.</string>
+    <string name="about_voice_commands">About Voice Commands</string>
+    <string name="announce_clue_button">Show button to announce clue</string>
+    <string name="announce_clue_button_desc">Add an on-screen button to announce current clue and word contents. Uses accessibility service if running.</string>
+    <string name="speech_not_ready">Speech service not ready.</string>
+    <string name="voice_command">Voice Command</string>
+    <string name="announce_clue_label">Announce Clue</string>
+    <string name="announce_clue_equals">Announce clue with equals key</string>
+    <string name="announce_clue_equals_desc">Press equals key to announce current clue and word.</string>
+    <string name="announce_clue_always">Always announce clues</string>
+    <string name="announce_clue_always_desc">Always announce clues on change, not just when an accessibility service is active.</string>
+    <string name="announce_box_always">Always announce boxes</string>
+    <string name="announce_box_always_desc">Always announce box contents on change, not just when an accessibility service is active.</string>
+
+    <!-- Ask AI for Help -->
+    <string name="help_query_solution_and_response">Give me a hint for the crossword clue \"%1$s\". So far my answer is \"%2$s\". The solution is \"%3$s\", but don\'t tell me that.</string>
+    <string name="help_query_just_response">Give me a hint for the crossword clue \"%1$s\". So far my answer is \"%2$s\".</string>
+    <string name="help_query_just_solution">Give me a hint for the crossword clue \"%1$s\". The solution is \"%2$s\", but don\'t tell me that.</string>
+    <string name="help_query_just_clue">Give me a hint for the crossword clue \"%1$s\".</string>
+    <string name="help_query_failed">Help query failed. Please check your network connection and API key in settings.</string>
+    <string name="help_query_response_title">ChatGPT Help Response</string>
+    <string name="help_query_chat_gpt">Ask ChatGPT for Help"</string>
+    <string name="help_query_but_no_active_network">Please enable a network connection to contact ChatGPT.</string>
+    <string name="chat_gpt_api_key">ChatGPT API Key</string>
+    <string name="chat_gpt_api_key_desc">You need an API key to use ChatGPT help. You can get an API Key from your Open AI account settings.</string>
+    <string name="chat_gpt_api_key_message">ChatGPT is an external network service run by OpenAI requiring a network connection. Its responses are not filtered by Forkyz and may be misleading, give away the answer, or be otherwise problematic. Use at your own risk.</string>
+</resources>

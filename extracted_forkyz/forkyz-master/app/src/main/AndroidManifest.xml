@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto"
+    android:versionCode="4200000"
+    android:versionName="42">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="21"
+        tools:ignore="ScopedStorage"
+        android:description="@string/perm_read_desc"
+    />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="21"
+        tools:ignore="ScopedStorage"
+        android:description="@string/perm_write_desc"
+    />
+    <uses-permission
+        android:name="android.permission.INTERNET" 
+        android:description="@string/perm_internet_desc"
+    />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:description="@string/perm_access_network_state_desc"
+    />
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED"
+        android:description="@string/perm_boot_desc"
+    />
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:description="@string/vibrate_desc"
+    />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:description="@string/wake_lock_desc"
+    />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        android:minSdkVersion="33"
+        android:description="@string/notification_permission_desc"
+    />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="app.crossword.yourealwaysbe.forkyz.ForkyzApplication"
+        android:backupAgent="app.crossword.yourealwaysbe.forkyz.BackupAgent"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:restoreAnyVersion="true"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        tools:ignore="UnusedAttribute"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:supportsRtl="true"
+    >
+        <activity
+            tools:ignore="UnusedAttribute"
+            android:name="app.crossword.yourealwaysbe.PlayActivity"
+            android:hardwareAccelerated="false"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@style/Theme.Forkyz"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"
+        >
+        </activity>
+        <activity
+            android:name="app.crossword.yourealwaysbe.PreferencesActivity"
+            android:label="@string/settings_label"
+            android:theme="@style/Theme.Forkyz"
+            android:exported="false"
+        />
+        <activity
+            android:name="app.crossword.yourealwaysbe.ClueListActivity"
+            android:label="@string/clues_list_label"
+            android:theme="@style/Theme.Forkyz"
+            android:configChanges="orientation"
+            android:exported="false"
+        />
+        <activity
+            android:name="app.crossword.yourealwaysbe.NotesActivity"
+            android:label="@string/notes_label"
+            android:theme="@style/Theme.Forkyz"
+            android:exported="false"
+        />
+        <activity
+            android:name="app.crossword.yourealwaysbe.HTMLActivity"
+            android:label="@string/html_label"
+            android:theme="@style/Theme.Forkyz"
+            android:exported="false"
+        />
+        <activity
+            android:name="app.crossword.yourealwaysbe.BrowseActivity"
+            android:configChanges="orientation"
+            android:theme="@style/Theme.Forkyz"
+            tools:ignore="AppLinkUrlError"
+            android:exported="true"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/x-crossword" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="text/xml" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/json" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="app.crossword.yourealwaysbe.util.files.FileHandlerShared"
+            android:authorities="app.crossword.yourealwaysbe.forkyzfiles"
+            android:exported="false"
+            android:grantUriPermissions="true"
+        >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/share_paths"
+            />
+        </provider>
+    </application>
+</manifest>

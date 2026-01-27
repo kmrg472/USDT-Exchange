@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/scraper_sources"
+    android:key="selectscraper"
+>
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/cru_puzzle_workshop"
+        android:defaultValue="false"
+        android:summary="@string/cru_puzzle_workshop_desc"
+        android:key="scrapeCru"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/keglars_cryptics"
+        android:defaultValue="false"
+        android:summary="@string/keglars_cryptics_desc"
+        android:key="scrapeKegler"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/private_eye"
+        android:defaultValue="false"
+        android:summary="@string/private_eye_desc"
+        android:key="scrapePrivateEye"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/przekroj"
+        android:defaultValue="false"
+        android:summary="@string/przekroj_desc"
+        android:key="scrapePrzekroj"
+    />
+    <androidx.preference.Preference
+        android:title="@string/about_scrapes"
+        android:key="aboutScrapes"
+    />
+</androidx.preference.PreferenceScreen>

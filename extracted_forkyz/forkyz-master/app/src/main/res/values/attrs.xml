@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ForkyzKey">
+        <attr name="keyCode" format="integer"/>
+        <attr name="specialKeyCode" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ClueLineOnly">
+        <attr name="clueLineOnlyTextColor" format="reference"/>
+    </declare-styleable>
+
+    <!-- used to allow legacy-like theme in theme/styles-common -->
+    <!-- thanks https://stackoverflow.com/a/30490191 -->
+    <attr name="clueLineOnlyStyle"/>
+    <attr name="speedDialStyle"/>
+    <!-- this one to define clue tabs background in styles -->
+    <attr name="clueTabsBackground"/>
+</resources>

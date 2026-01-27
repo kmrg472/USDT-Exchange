@@ -1,0 +1,5 @@
+- Import files from storage.
+- Updated help pages, including notes help.
+- List of external sources where puzzles can be downloaded.
+- New default keyboard mode only hides with back button.
+- Adjustment of zoom/snap behaviour on play board.

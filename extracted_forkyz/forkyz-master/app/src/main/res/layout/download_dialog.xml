@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/download_root"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:paddingLeft="?dialogPreferredPadding"
+    android:paddingRight="?dialogPreferredPadding"
+    android:paddingStart="?dialogPreferredPadding"
+    android:paddingEnd="?dialogPreferredPadding"
+    android:paddingTop="?dialogPreferredPadding"
+    android:paddingBottom="?dialogPreferredPadding"
+>
+    <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayOfWeek"
+            android:textAlignment="center"
+            android:gravity="center"
+        />
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:padding="5dip"
+            android:layout_gravity="center_horizontal"
+            android:calendarViewShown="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            tools:ignore="UnusedAttribute"
+        />
+        <Spinner
+            android:id="@+id/puzzleSelect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/puzzle_select"
+        />
+    </LinearLayout>
+</ScrollView>

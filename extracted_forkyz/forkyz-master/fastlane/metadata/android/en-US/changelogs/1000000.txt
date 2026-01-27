@@ -1,0 +1,5 @@
+- Updated list of online puzzle sources.
+- Add show errors under cursor option.
+- Amuse Labs and King Digital downloads supported: circled boxes now work for LA Times puzzles, bring back Washington Post, LAT Sundays, Joseph, Sheffer, and Premier crossword downloaders.
+- Circled boxes re-enabled in JPZ puzzles.
+- Improved error highlighting in night colors.

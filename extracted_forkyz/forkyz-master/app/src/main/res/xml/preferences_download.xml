@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/download_settings"
+    android:key="downloadOptions"
+>
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/automatic_download"
+        android:defaultValue="false"
+        android:summary="@string/automatic_download_desc"
+        android:key="dlOnStartup"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/background_download_opts"
+        android:summary="@string/background_download_opts_desc"
+        android:key="backgroundDownloadOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$DownloadBackgroundFragment"
+    />
+
+    <androidx.preference.MultiSelectListPreference
+        android:title="@string/auto_downloaders"
+        android:summary="@string/auto_downloaders_desc"
+        android:key="autoDownloaders"
+        android:defaultValue="@array/emptyArray"
+    />
+
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/no_summary_download_notifs"
+        android:defaultValue="false"
+        android:summary="@string/no_summary_download_notifs_desc"
+        android:key="supressSummaryMessages"
+    />
+
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/no_puzzle_download_notifs"
+        android:defaultValue="false"
+        android:summary="@string/no_puzzle_download_notifs_desc"
+        android:key="supressMessages"
+    />
+
+    <androidx.preference.ListPreference
+        android:title="@string/download_timeout"
+        android:summary="@string/download_timeout_desc"
+        android:key="downloadTimeout"
+        android:defaultValue="30000"
+        android:entries="@array/downloadTimeoutLabels"
+        android:entryValues="@array/downloadTimeoutValues"
+    />
+</androidx.preference.PreferenceScreen>

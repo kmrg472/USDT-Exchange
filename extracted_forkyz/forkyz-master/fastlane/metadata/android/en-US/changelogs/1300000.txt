@@ -1,0 +1,2 @@
+- Support for QWERTZ, Colemak and Dvorak keyboard layouts.
+- Custom daily .puz source added to downloads.

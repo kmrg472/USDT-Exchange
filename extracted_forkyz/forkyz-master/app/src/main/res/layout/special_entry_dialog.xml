@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/special_entry_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="?dialogPreferredPadding"
+    android:paddingRight="?dialogPreferredPadding"
+    android:paddingStart="?dialogPreferredPadding"
+    android:paddingEnd="?dialogPreferredPadding"
+    android:paddingTop="?dialogPreferredPadding"
+    android:paddingBottom="?dialogPreferredPadding"
+    android:orientation="vertical"
+>
+    <TextView
+        android:id="@+id/enter_special"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_special_desc"
+    />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/special_character"
+        android:layout_marginTop="?dialogPreferredPadding"
+    >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/special_entry_edit_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:autofillHints=".AUTOFILL_HINT_NOT_APPLICABLE"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

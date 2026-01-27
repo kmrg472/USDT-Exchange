@@ -1,0 +1,3 @@
+- Allow customisation of automatic downloads, and support older devices.
+- Bring back the native keyboard (your mileage may vary).
+- Restore wrap to next list behaviour for next clue movement strategy.

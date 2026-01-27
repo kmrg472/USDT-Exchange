@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_label"
+>
+    <androidx.preference.ListPreference
+        android:title="@string/storage_location"
+        android:summary="@string/storage_location_desc"
+        android:key="storageLocation"
+        android:defaultValue="@string/internal_storage"
+        android:entries="@array/storageLocations"
+        android:entryValues="@array/storageLocations"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/select_sources"
+        android:summary="@string/select_sources_desc"
+        android:key="sourcesOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$SourcesFragment"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/download_settings"
+        android:summary="@string/download_settings_desc"
+        android:key="downloadOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$DownloadFragment"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/browser_settings"
+        android:summary="@string/browser_settings_desc"
+        android:key="browserOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$BrowserFragment"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/display_settings"
+        android:summary="@string/display_settings_desc"
+        android:key="displayOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$DisplayFragment"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/keyboard_settings"
+        android:summary="@string/keyboard_settings_desc"
+        android:key="keyboardOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$KeyboardFragment"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/interaction_settings"
+        android:summary="@string/interaction_settings_desc"
+        android:key="keyboardOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$InteractionFragment"
+    />
+
+    <androidx.preference.Preference
+        android:title="@string/voice_settings"
+        android:summary="@string/voice_settings_desc"
+        android:key="voiceOptions"
+        app:fragment="app.crossword.yourealwaysbe.PreferencesSubPages$VoiceFragment"
+    />
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/about_forkyz"
+    >
+
+        <androidx.preference.Preference
+            android:title="@string/release_notes"
+            android:key="releaseNotes"
+        />
+
+        <androidx.preference.Preference
+            android:title="@string/license"
+            android:key="license"
+        />
+
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

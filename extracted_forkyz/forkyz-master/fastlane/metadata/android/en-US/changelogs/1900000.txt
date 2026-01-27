@@ -1,0 +1,7 @@
+- Support coloured cells in JPZ and IPuz
+- Support bars in JPZ as well as IPuz
+- Support HTML in clue/title/etc text
+- Player notes for whole puzzle as well as just clue
+- Limited support for additional clue lists (not just across/down)
+- Allow cells that would typically be numbered to not be numbered
+

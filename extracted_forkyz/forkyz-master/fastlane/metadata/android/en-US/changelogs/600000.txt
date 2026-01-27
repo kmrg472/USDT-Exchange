@@ -1,0 +1,5 @@
+- Cache meta data to speed up browsing (after first view).
+- Clean up zoom/scroll behaviour.
+- Add menu option link to support puzzle sources.
+- Improve arrow key navigation (inc. bug fixes).
+- Fix crash in browsing when last puzzle was deleted.

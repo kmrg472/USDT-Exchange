@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="movementStrategyLabels">
+       <item>Next word in line</item>
+       <item>Stop at the end</item>
+       <item>Next clue</item>
+       <item>Next parallel clue</item>
+     </string-array>
+     <string-array name="movementStrategyValues">
+       <item>MOVE_NEXT_ON_AXIS</item>
+       <item>STOP_ON_END</item>
+       <item>MOVE_NEXT_CLUE</item>
+       <item>MOVE_PARALLEL_WORD</item>
+     </string-array>
+     <string-array name="cleanupAgeLabels">
+       <item>Two Days</item>
+       <item>One Week</item>
+       <item>Thirty Days</item>
+       <item>Never</item>
+     </string-array>
+     <string-array name="cleanupAgeValues">
+       <item>2</item>
+       <item>7</item>
+       <item>30</item>
+       <item>-1</item>
+     </string-array>
+     <string-array name="orientationLockLabels">
+       <item>Unlocked</item>
+       <item>Portrait</item>
+       <item>Landscape</item>
+     </string-array>
+     <string-array name="orientationLockValues">
+       <item>UNLOCKED</item>
+       <item>PORT</item>
+       <item>LAND</item>
+     </string-array>
+    <string-array name="swipeActionLabels">
+        <item>Delete</item>
+        <item>Archive</item>
+    </string-array>
+    <string-array name="swipeActionValues">
+        <item>DELETE</item>
+        <item>ARCHIVE</item>
+    </string-array>
+    <string-array name="keyboardShowHideLabels">
+       <item>@string/keyboard_always_show</item>
+       <item>@string/keyboard_hide_manual</item>
+       <item>@string/keyboard_show_sparingly_desc</item>
+       <item>@string/keyboard_never_show</item>
+     </string-array>
+     <string-array name="keyboardShowHideValues">
+       <item>@string/keyboard_always_show</item>
+       <item>@string/keyboard_hide_manual</item>
+       <item>@string/keyboard_show_sparingly</item>
+       <item>@string/keyboard_never_show</item>
+     </string-array>
+     <string-array name="keyboardLayoutsLabels">
+       <item>@string/keyboard_qwerty</item>
+       <item>@string/keyboard_qwertz</item>
+       <item>@string/keyboard_dvorak</item>
+       <item>@string/keyboard_colemak</item>
+     </string-array>
+     <string-array name="keyboardLayoutsValues">
+       <item>0</item>
+       <item>1</item>
+       <item>2</item>
+       <item>3</item>
+     </string-array>
+     <string-array name="storageLocations">
+       <item>@string/internal_storage</item>
+       <item>@string/external_storage_saf</item>
+       <item>@string/external_storage_legacy</item>
+     </string-array>
+     <string-array name="backgroundDownloadDaysTimeValues">
+       <item>0</item>
+       <item>1</item>
+       <item>2</item>
+       <item>3</item>
+       <item>4</item>
+       <item>5</item>
+       <item>6</item>
+       <item>7</item>
+       <item>8</item>
+       <item>9</item>
+       <item>10</item>
+       <item>11</item>
+       <item>12</item>
+       <item>13</item>
+       <item>14</item>
+       <item>15</item>
+       <item>16</item>
+       <item>17</item>
+       <item>18</item>
+       <item>19</item>
+       <item>20</item>
+       <item>21</item>
+       <item>22</item>
+       <item>23</item>
+     </string-array>
+     <string-array name="backgroundDownloadDaysTimeLabels">
+         <item>@string/background_download_0</item>
+         <item>@string/background_download_1</item>
+         <item>@string/background_download_2</item>
+         <item>@string/background_download_3</item>
+         <item>@string/background_download_4</item>
+         <item>@string/background_download_5</item>
+         <item>@string/background_download_6</item>
+         <item>@string/background_download_7</item>
+         <item>@string/background_download_8</item>
+         <item>@string/background_download_9</item>
+         <item>@string/background_download_10</item>
+         <item>@string/background_download_11</item>
+         <item>@string/background_download_12</item>
+         <item>@string/background_download_13</item>
+         <item>@string/background_download_14</item>
+         <item>@string/background_download_15</item>
+         <item>@string/background_download_16</item>
+         <item>@string/background_download_17</item>
+         <item>@string/background_download_18</item>
+         <item>@string/background_download_19</item>
+         <item>@string/background_download_20</item>
+         <item>@string/background_download_21</item>
+         <item>@string/background_download_22</item>
+         <item>@string/background_download_23</item>
+     </string-array>
+     <string-array name="backgroundDownloadDaysValues">
+        <!-- matches java DayOfWeek -->
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+     </string-array>
+     <string-array name="backgroundDownloadDaysLabels">
+        <item>@string/background_download_mon</item>
+        <item>@string/background_download_tue</item>
+        <item>@string/background_download_wed</item>
+        <item>@string/background_download_thu</item>
+        <item>@string/background_download_fri</item>
+        <item>@string/background_download_sat</item>
+        <item>@string/background_download_sun</item>
+     </string-array>
+     <string-array name="downloadTimeoutValues">
+        <item>15000</item>
+        <item>30000</item>
+        <item>45000</item>
+        <item>60000</item>
+     </string-array>
+     <string-array name="downloadTimeoutLabels">
+        <item>@string/fifteen_seconds</item>
+        <item>@string/thirty_seconds</item>
+        <item>@string/forty_five_seconds</item>
+        <item>@string/sixty_seconds</item>
+     </string-array>
+     <string-array name="themeTypeLabels">
+         <item>@string/standard_theme</item>
+         <item>@string/dynamic_theme</item>
+         <item>@string/legacy_like_theme</item>
+     </string-array>
+     <string-array name="themeTypeValues">
+         <item>@string/standard_theme_value</item>
+         <item>@string/dynamic_theme_value</item>
+         <item>@string/legacy_like_theme_value</item>
+     </string-array>
+     <string-array name="themeTypeLabelsNoDynamic">
+         <item>@string/standard_theme</item>
+         <item>@string/legacy_like_theme</item>
+     </string-array>
+     <string-array name="themeTypeValuesNoDynamic">
+         <item>@string/standard_theme_value</item>
+         <item>@string/legacy_like_theme_value</item>
+     </string-array>
+
+     <string-array name="emptyArray"/>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <item
+        android:id="@+id/browse_menu_app_theme"
+        android:icon="@drawable/system_daynight_mode"
+        android:title="@string/app_theme"
+        app:showAsAction="ifRoom"
+    />
+    <item
+        android:id="@+id/browse_menu_sort"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:title="@string/sort"
+        app:showAsAction="withText"
+    >
+        <menu>
+            <item
+                android:id="@+id/browse_menu_sort_date_desc"
+                android:title="@string/by_date_desc"
+            />
+            <item
+                android:id="@+id/browse_menu_sort_date_asc"
+                android:title="@string/by_date_asc"
+            />
+            <item
+                android:id="@+id/browse_menu_sort_source"
+                android:title="@string/by_source"
+            />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/browse_menu_cleanup"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/cleanup"
+    />
+    <item
+        android:id="@+id/browse_menu_archives"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/archives"
+    />
+    <item
+        android:id="@+id/browse_menu_help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/help"
+    />
+    <item
+        android:id="@+id/browse_menu_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/settings"
+    />
+</menu>

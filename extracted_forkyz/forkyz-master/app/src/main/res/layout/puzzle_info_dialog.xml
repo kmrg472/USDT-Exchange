@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="?dialogPreferredPadding"
+    android:paddingBottom="?dialogPreferredPadding"
+    android:paddingStart="?dialogPreferredPadding"
+    android:paddingEnd="?dialogPreferredPadding"
+    android:paddingLeft="?dialogPreferredPadding"
+    android:paddingRight="?dialogPreferredPadding"
+>
+    <TextView
+        android:id="@+id/puzzle_info_title"
+        android:textSize="30sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/puzzle_title"
+        android:gravity="center_horizontal"
+        tools:ignore="UnusedAttribute"
+        android:accessibilityHeading="true"
+    />
+
+    <TextView
+        android:id="@+id/puzzle_info_author"
+        android:textSize="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/by_author"
+        android:gravity="center_horizontal"
+    />
+
+    <TextView
+        android:id="@+id/puzzle_info_copyright"
+        android:textSize="12sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright_info"
+        android:gravity="center_horizontal"
+    />
+
+   <TextView
+        android:id="@+id/puzzle_info_time"
+        android:textSize="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/elapsed_time_labelled_dummy"
+       android:gravity="center_horizontal"
+    />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/puzzle_info_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:max="100"
+        android:progress="80"
+    />
+
+    <TextView
+        android:id="@+id/puzzle_info_filename"
+        android:textSize="12sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:gravity="center_horizontal"
+    />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:id="@+id/puzzle_info_intro_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/introduction"
+                android:paddingTop="?dialogPreferredPadding"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute"
+                android:accessibilityHeading="true"
+            />
+            <TextView
+                android:id="@+id/puzzle_info_intro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/puzzle_intro"
+                android:scrollbars="vertical"
+                android:lineSpacingMultiplier="1.2"
+            />
+            <TextView
+                android:id="@+id/puzzle_info_notes_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notes"
+                android:paddingTop="?dialogPreferredPadding"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute"
+                android:accessibilityHeading="true"
+            />
+            <TextView
+                android:id="@+id/puzzle_info_notes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/puzzle_notes"
+                android:scrollbars="vertical"
+                android:lineSpacingMultiplier="1.2"
+            />
+            <TextView
+                android:id="@+id/puzzle_info_completed_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/completed"
+                android:paddingTop="?dialogPreferredPadding"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute"
+                android:accessibilityHeading="true"
+            />
+            <!-- padding for when the title is hidden -->
+            <View
+                android:id="@+id/puzzle_info_completed_padding"
+                android:layout_width="fill_parent"
+                android:layout_height="?dialogPreferredPadding"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+            />
+            <include layout="@layout/completion_info"/>
+        </LinearLayout>
+  </ScrollView>
+</LinearLayout>

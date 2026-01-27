@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/display_settings"
+    android:key="voiceOptions"
+>
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/voice_with_volume"
+        android:defaultValue="false"
+        android:summary="@string/voice_with_volume_desc"
+        android:key="volumeActivatesVoice"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/voice_with_button"
+        android:defaultValue="false"
+        android:summary="@string/voice_with_button_desc"
+        android:key="buttonActivatesVoice"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/announce_clue_button"
+        android:defaultValue="false"
+        android:summary="@string/announce_clue_button_desc"
+        android:key="buttonAnnounceClue"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/announce_clue_equals"
+        android:defaultValue="true"
+        android:summary="@string/announce_clue_equals_desc"
+        android:key="equalsAnnounceClue"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/announce_clue_always"
+        android:defaultValue="false"
+        android:summary="@string/announce_clue_always_desc"
+        android:key="alwaysAnnounceClue"
+    />
+    <androidx.preference.CheckBoxPreference
+        android:title="@string/announce_box_always"
+        android:defaultValue="false"
+        android:summary="@string/announce_box_always_desc"
+        android:key="alwaysAnnounceBox"
+    />
+    <androidx.preference.Preference
+        android:title="@string/about_voice_commands"
+        android:key="aboutVoiceCommands"
+    />
+</androidx.preference.PreferenceScreen>

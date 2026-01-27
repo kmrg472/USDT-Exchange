@@ -1,0 +1,6 @@
+- Import of IPuz files
+- Use IPuz as backend file format instead of Across Lite
+- Remove HTTP/download system actions in favour of "open with"
+- Prevent multiple simultaneous browse activities
+- Avoid reloading puzzle list in browse activity on delete/move, and losing scroll position
+- Friendlier import file names

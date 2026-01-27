@@ -1,0 +1,38 @@
+
+plugins {
+    id 'checkstyle'
+    id 'java'
+    id 'com.github.johnrengelman.shadow'
+}
+
+group 'app.crossword.yourealwaysbe'
+
+test { useJUnitPlatform() }
+
+dependencies {
+    def junitVersion = '5.9.1'
+    testImplementation "org.junit.jupiter:junit-jupiter:$junitVersion"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$junitVersion"
+
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'org.apache.commons:commons-text:1.9'
+    implementation 'org.json:json:20210307'
+    implementation 'org.hjson:hjson:3.0.0'
+    implementation 'net.iharder:base64:2.3.9'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    shadowJar {
+        relocate 'org.json', 'app.crossword.yourealwaysbe.org.json'
+    }
+
+    // thanks to
+    // https://www.morling.dev/blog/bytebuffer-and-the-dreaded-nosuchmethoderror/
+    // https://github.com/danilovesky/workcraft/commit/6901b6e2de001c720d5e744ac877878c8931f2a7
+    compileJava {
+        if (JavaVersion.current().isJava9Compatible()) {
+            options.release = 8
+        }
+    }
+}
