@@ -1,0 +1,43 @@
+{
+  "id": "sample-medium-1",
+  "title": "Daily Crossword - Medium",
+  "author": "Forkyz Team",
+  "copyright": "© 2026 Forkyz",
+  "width": 7,
+  "height": 7,
+  "grid": [
+    "S", "T", "A", "R", ".", "C", "A",
+    "P", "O", "L", "E", ".", "O", "R",
+    "A", "R", "E", "A", ".", "A", "T",
+    ".", ".", ".", "D", "O", "G", "S",
+    "C", "A", "T", "S", ".", ".", ".",
+    "A", "R", ".", "T", ".", "B", "A",
+    "R", "E", ".", "S", ".", "A", "T"
+  ],
+  "clues": {
+    "across": [
+      "1. Celestial body",
+      "5. Opposite of OR",
+      "8. Region",
+      "9. Preposition",
+      "11. Canines",
+      "12. Felines",
+      "14. Exist",
+      "15. Tavern",
+      "16. Consumed",
+      "17. Preposition"
+    ],
+    "down": [
+      "1. Fishing rod",
+      "2. Consumed",
+      "3. Exist",
+      "4. Rodent",
+      "6. Preposition",
+      "7. Exist",
+      "10. Canine",
+      "13. Preposition"
+    ]
+  },
+  "pubdate": "2026-01-27",
+  "notes": "A medium difficulty crossword puzzle for testing the Forkyz PWA."
+}

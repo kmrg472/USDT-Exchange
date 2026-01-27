@@ -1,50 +1,101 @@
+// Core types for Forkyz Crossword PWA
 
-export type OrderStatus = 'PENDING' | 'APPROVED' | 'REJECTED';
-export type OrderType = 'BUY' | 'SELL';
+export enum Direction {
+  ACROSS = 'across',
+  DOWN = 'down'
+}
 
-export interface Transaction {
+export enum CellState {
+  EMPTY = 'empty',
+  FILLED = 'filled',
+  CORRECT = 'correct',
+  INCORRECT = 'incorrect',
+  REVEALED = 'revealed'
+}
+
+export interface Position {
+  row: number;
+  col: number;
+}
+
+export interface Box {
+  row: number;
+  col: number;
+  solution: string | null;  // Correct answer
+  response: string;          // User's answer
+  isBlock: boolean;          // Black square
+  clueNumber?: string;       // Number displayed in cell
+  state: CellState;
+  cheated: boolean;
+  
+  // Visual properties
+  hasCircle?: boolean;
+  color?: string;
+  textColor?: string;
+  
+  // Clue associations
+  acrossClueIndex?: number;
+  downClueIndex?: number;
+}
+
+export interface Clue {
+  number: string;
+  text: string;
+  direction: Direction;
+  startRow: number;
+  startCol: number;
+  length: number;
+  answer?: string;  // For checking
+  cells: Position[];  // All cells in this clue
+}
+
+export interface Puzzle {
   id: string;
-  mobile: string;
-  type: OrderType;
-  txid: string; 
-  amount: number;
-  payoutDetails: string;
-  status: OrderStatus;
-  timestamp: number;
+  title: string;
+  author?: string;
+  copyright?: string;
+  notes?: string;
+  width: number;
+  height: number;
+  grid: Box[][];
+  acrossClues: Clue[];
+  downClues: Clue[];
+  pubdate?: string;
+  source?: string;
 }
 
-export interface AdminSettings {
-  sellPrice: number;
-  buyPrice: number;
-  whatsappNumber: string;
-  usdtWalletAddress: string;
-  usdtQrUrl: string;
-  bankDetails: string;
-  bankQrUrl: string;
-  upiAddress: string;
+export interface GameState {
+  puzzleId: string;
+  currentPosition: Position;
+  currentDirection: Direction;
+  grid: Box[][];
+  startTime: number;
+  elapsedTime: number;  // in seconds
+  isPaused: boolean;
+  isComplete: boolean;
+  lastSaved: number;
 }
 
-export interface User {
-  mobile: string;
-  isAdmin: boolean;
+export interface PuzzleMetadata {
+  id: string;
+  title: string;
+  author?: string;
+  difficulty?: string;
+  size: string;
+  pubdate?: string;
+  completed: boolean;
+  progress: number;  // 0-100
 }
 
-export interface GeneratedSite {
-  siteName: string;
-  heroHeadline: string;
-  heroSubheadline: string;
-  sections: {
-    id: string;
-    title: string;
-    body: string;
-  }[];
-  footerNote: string;
+export enum GameView {
+  BROWSER = 'browser',
+  PLAY = 'play',
+  CLUE_LIST = 'clue_list'
 }
 
-export enum View {
-  LANDING = 'LANDING',
-  LOGIN = 'LOGIN',
-  REGISTER = 'REGISTER',
-  USER_DASHBOARD = 'USER_DASHBOARD',
-  ADMIN_DASHBOARD = 'ADMIN_DASHBOARD'
+export interface AppState {
+  currentView: GameView;
+  currentPuzzle: Puzzle | null;
+  gameState: GameState | null;
+  puzzleList: PuzzleMetadata[];
 }

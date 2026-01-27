@@ -1,0 +1,20 @@
+# Apache configuration for SPA routing
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Service Worker headers
+<FilesMatch "sw\.js$">
+  Header set Cache-Control "public, max-age=0, must-revalidate"
+  Header set Service-Worker-Allowed "/"
+</FilesMatch>
+
+# Manifest headers
+<FilesMatch "manifest\.(json|webmanifest)$">
+  Header set Content-Type "application/manifest+json"
+</FilesMatch>
